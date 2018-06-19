@@ -1,0 +1,40 @@
+
+
+<app-header></app-header>
+<div class="container">
+	<div class="tab-content">
+		<div id="menu1" class="tab-pane fade in active">
+			<table
+				class="table table-responsive-md table-striped approve_table notification-head"
+				border="0">
+				<thead class="Tcolor">
+					<tr>
+						<th>Image ID</th>
+						<th>Vechile Number</th>
+						<th>Offence Category</th>
+						<th>Date(dd/mm/yyyy)</th>
+						<th>Time</th>
+						<th>Location</th>
+						<th>Description</th>
+						<th>Image Info</th>
+						<th>Status</th>					
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let Udata of reportget1">
+						  <td>{{Udata.id}}</td>
+							<td>{{Udata.vehicleNum}}</td>
+							<td>{{Udata.offenceCategory}}</td>
+							<td>{{Udata.postedDate}}</td>
+							<th>{{Udata.time}}</th>
+							<td>{{Udata.location}}</td>
+							<td>{{Udata.description}}</td>
+              <td>{{Udata.status}}</td>	
+              <td><button class="btn btn-primary pull-right" [routerLink]="['/imageview',Udata.id]">view
+                </button></td>			
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

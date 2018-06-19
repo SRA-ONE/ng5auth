@@ -1,0 +1,10 @@
+.header{
+background:rgba(0,0,0,0.8)! important ;
+}
+.colo a{
+	color:white; 
+}
+.colo a:hover{
+	background-color: white;
+	
+}

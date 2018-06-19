@@ -1,0 +1,142 @@
+
+<div class="view">
+<div class="container backgnd">	
+			<div class="positn">
+			<div class="profile-name"> 	
+		 	       	 <h2 class="text-center">Profile</h2>
+
+			</div>
+			    	
+					 	       	 
+
+
+		<div class="col-md-10 col-md-offset-4">		
+				<!-- User Profile -->
+				<form class="form-horizontal">
+     
+    				  <div class="form-group">
+						<label class="control-label col-sm-2" for="Name">FirstName :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control"  name="fname" [(ngModel)]="userD.firstName"  />
+							</div>		
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="Name">LastName :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control"  name="fname" [(ngModel)]="userD.lastName"/>
+						</div>	
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="MobileNum">Mobile Num :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" id="mobile" name="mobile" [(ngModel)]="userD.mobileNum"   placeholder="Provide Your Mobile Number" />	
+							</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="Email">Email :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="email" class="form-control" id="email" name="email"  [(ngModel)]="userD.name"    placeholder="Enter Email Id" >
+				   		</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="DOB">Date Of Birth :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="date" class="form-control" name="dob" placeholder="mm/dd/yyyy" id="date" [(ngModel)]="userD.dob">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="Address">Address :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" id="add"  name="add" autocomplete="off" [(ngModel)]="userD.address" placeholder="Address" required>
+							</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="State">State :</label>
+							<div class="col-sm-4 editFinputs">
+								<input list="states" class="form-control" id="state" autocomplete="off"  name="state" [(ngModel)]="userD.state" placeholder="Enter Your State" required>
+			 
+										  <datalist id="states">
+										    <option value="Andaman and Nicobar Islands"></option>
+										    <option value="Andhra Pradesh"></option>
+										    <option value="Arunachal Pradesh"></option>
+										    <option value="Assam"></option>
+										    <option value="	Bihar"></option>
+										    <option value="Chandigarh"></option>
+										    <option value="Chhattisgarh"></option>
+										    <option value="Telangana"></option>
+										    <option value="Uttar Pradesh"></option>
+										    <option value="West Bengal"></option>
+										  </datalist>
+							</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="City">City :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" id="city"  name="city" autocomplete="off" [(ngModel)]="userD.city" placeholder="Enter Your City" required>
+								    
+							</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="Zipcode">Zipcode :</label>
+							<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" name="zipcode" autocomplete="off" [(ngModel)]="userD.zipCode" placeholder="Enter Your Zipcode" required>
+							</div>
+					</div>
+					<h3>Bank Details</h3>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="Aadhar">Aadhar :</label>
+						<div class="col-sm-4 editFinputs">
+							<input type="text" class="form-control" name="Aadhar" [(ngModel)]="userD.aadharNo" autocomplete="off" placeholder="Enter Your Aadhar Number"  required>
+						</div>
+
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="AccountType">Account Type :</label>
+						<div class="col-sm-4 editFinputs">
+							<select class="form-control" name="Account" [(ngModel)]="userD.accountType" autocomplete="off" required >
+									      	<option disabled >Please choose account type</option>
+									        <option>Savings Account</option>
+									        <option>Current Account</option>
+									        <option>Checking Account</option>
+							</select>
+						
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="IFSCCode">IFSC Code :</label>
+						<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" name="IFSC" autocomplete="off" [(ngModel)]="userD.ifscCode" id="ifsc" placeholder="IFSC code" required>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="BranchName">Branch Name :</label>
+						<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" name="Branch" id="brname" autocomplete="off" [(ngModel)]="userD.branchName" placeholder="Enter your branch name" required>
+						
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="AccountNumber">Account Number :</label>
+						<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" name="Anumber" id="account" autocomplete="off" [(ngModel)]="userD.accountNo" placeholder="Bank account number" required>
+						
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="BankName">Bank Name :</label>
+						<div class="col-sm-4 editFinputs">
+								<input type="text" class="form-control" name="BankName" id="bname" autocomplete="off" [(ngModel)]="userD.bankName" placeholder="Enter your bank name" required>
+						</div>
+					</div>
+					<div class="btn-group col-md-offset-3">
+						
+						<button class="btn btn-info" (click)="profileedit()">Update</button>
+					</div>
+				</form>
+
+	
+</div>
+</div>
+</div>
